@@ -1,0 +1,82 @@
+.servise{
+    padding: 150px 0;
+
+    &__flex{
+        @include flex;
+        align-items:  start;
+        width: 100%;
+    }
+
+    &__left{
+        width: 306px;
+        height: 333px;
+    }
+
+    &__title{
+        margin: 0;
+        @include fontStyle(700,40px,140%,$color-1);
+        margin-bottom: 60px;
+    }
+
+    &__list{
+        list-style-type: none;
+        padding-left: 0;
+        margin: 0;
+    }
+    
+    &__item{
+        margin-bottom: 30px;
+        @include flex;
+        align-items: start;
+    }
+    
+    &__text{
+        margin: 0;
+        width: 250px;
+        height: 66px;
+        @include fontStyle(400,16px,140%,$color-4);
+        margin-right: 10px;
+    }
+
+    &__btn{
+        border: none;
+        @include fontStyle(700,13px,140%,$color-2);
+        padding: 8px 10px;
+        border-radius: 10px;
+        background-color: $color-3;
+    }
+
+    &__textt{
+        width: 180px;
+    }
+
+    &__right{
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        align-items: start;
+        gap: 15px;
+    }
+
+    &__wrap{
+        width: 416px;
+        height: 223px;
+        background-color: $color-4;
+        border-radius: 20px;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 30px 35px;
+    }
+
+    &__service{
+        margin: 0;
+        @include fontStyle(700,13px,140%,$color-2);
+    }
+
+    &__Text{
+        margin: 0;
+        @include fontStyle(700,19px,140%,$color-2);
+    }
+}

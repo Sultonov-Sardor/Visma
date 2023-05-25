@@ -1,0 +1,17 @@
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin textDecoration {
+    text-decoration: none;
+}
+
+@mixin fontStyle ($weight,$size,$line-height,$color){
+    font-style: normal;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $line-height;
+    color: $color;
+}

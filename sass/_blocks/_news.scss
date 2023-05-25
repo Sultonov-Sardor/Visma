@@ -1,0 +1,67 @@
+.news{
+    padding: 150px 0;
+
+    &__left{
+        @include flex;
+        margin-bottom: 60px;
+    }
+
+    &__title{
+        width: 145px;
+        height: 56px;
+        margin: 0;
+        @include fontStyle(700,40px,140%,$color-1);
+    }
+
+    &__btn{
+        display: flex;
+        align-items: center;
+        border: none;
+        background-color: transparent;
+    }
+
+    &__icon{
+        margin-left: 15px;
+        width: 30px;
+        height: 30px;
+    }
+    
+    &__list{
+        @include flex;
+        align-items: flex-start;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__item{
+        width: 306px;
+        margin-right: 25px;
+    }
+
+    &__img{
+        width: 306px;
+        height: 214px;
+        object-fit: cover;
+        object-position: center;
+        margin-bottom: 25px;
+    }
+
+    &__span{
+        @include fontStyle(700,13px,140%,$color-1);
+        margin-bottom: 15px;
+    }
+
+    &__Title{
+        margin: 0;
+        @include fontStyle(700,19px,140%,$color-1);
+        margin-bottom: 12px;
+    }
+
+    &__desc{
+        width: 276px;
+        height: 60px;
+        margin: 0;
+        @include fontStyle(400,14px,140%,$color-1);
+    }
+}

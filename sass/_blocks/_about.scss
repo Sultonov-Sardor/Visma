@@ -1,0 +1,81 @@
+.about{
+    padding: 100px 0;
+    background-color: rgba($color: #3D348B, $alpha: 0.05);
+
+    &__title{
+        margin: 0;
+        @include fontStyle(700,40px,140%,$color-1);
+        margin-bottom: 60px;
+    }
+
+    &__flex{
+        @include flex;
+        align-items: start;
+    }
+
+    &__Text{
+        width: 600px;
+        height: 66px;
+        margin: 0;
+        @include fontStyle(400,16px,140%,$color-1);
+        margin-bottom: 16px;
+    }
+
+    &__text{
+        margin: 0;
+        @include fontStyle(400,16px,140%,$color-1);
+        margin-bottom: 16px;
+    }
+
+    &__list{
+        margin: 0;
+        padding-left: -5;
+    }
+
+    &__item{
+        width: 555px;
+        @include fontStyle(400,16px,140%,$color-1);
+        margin-bottom: 10px;
+    }
+
+    &__texT{
+        width: 630px;
+        height: 66px;
+        margin: 0;
+        @include fontStyle(400,16px,140%,$color-1);
+        margin-bottom: 16px;
+    }
+
+    &__iframe{
+        background: linear-gradient(0deg, rgba(61, 52, 139, 0.5), rgba(61, 52, 139, 0.5)), url(image.png);
+        border-radius: 20px;
+        margin-bottom: 30px;
+    }
+
+    &__box{
+        width: 526px;
+        height: 170px;
+        background-color: $color-3;
+        border-radius: 20px;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 30px 35px;
+    }
+
+    &__boxTitle{
+        margin: 0;
+        width: 530px;
+        @include fontStyle(700,13px,140%,$color-2);
+        // letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+
+    &__boxText{
+        margin: 0;
+        width: 430px;
+        @include fontStyle(700,19px,140%,$color-2);
+
+    }
+}

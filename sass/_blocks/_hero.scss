@@ -1,0 +1,67 @@
+.hero{
+    padding: 113px 0;
+    background-image: url(../../images/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &__flex{
+        @include flex;
+    }
+
+    &__title{
+        @include fontStyle(700,50px,140%,$color-2);
+        width: 526px;
+        height: 140px;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+
+    &__text{
+        width: 322px;
+        height: 66px;
+        margin: 0;
+        @include fontStyle(400,16px,140%,$color-2);
+        margin-bottom: 60px;
+    }
+
+    &__btn{
+        width: 159px;
+        height: 30px;
+        border: none;
+        background-color: transparent;
+        text-align: center;
+        @include flex;
+        @include fontStyle(700,16px,140%,$color-2)
+    }
+
+    &__rightWrap{
+        width: 636px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    &__wrap{
+        width: 306px;
+        height: 250px;
+        padding: 30px 35px;
+        background-color: $color-3;
+        border-radius: 20px;
+        @include flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    &__service{
+        margin: 0;
+        @include fontStyle(700,13px,140%,$color-2);
+    }
+
+    &__Text{
+        @include fontStyle(700,19px,140%,$color-2);
+        width: 236px;
+        height: 54px;
+        margin: 0;
+    }
+}

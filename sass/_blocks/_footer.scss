@@ -1,0 +1,101 @@
+.footer{
+
+    &__top{
+        padding: 45px 0;
+        @include flex;
+        background-color: rgba($color:  #3D348B, $alpha: 0.85);
+    }
+
+    &__lokatsiya{
+        display: flex;
+        align-items: center;
+        @include fontStyle(700,16px,140%,$color-2);
+    }
+
+    &__locationIcon{
+        width: 20.65px;
+        height: 26.65px;
+        object-fit: cover;
+        object-position: center;
+        margin-right: 24px;
+    }
+
+    &__logo{
+        width: 180px;
+        height: 30px;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    &__phone{
+        @include fontStyle(700,16px,140%,$color-2);
+        margin-right: 32.5px;
+    }
+    
+    &__phoneIcon{
+        width: 20.5px;
+        height: 20.5px;
+        object-fit: contain;
+        object-position: center;
+        margin-right: 22.5px;
+    }
+
+    &__email{
+        @include fontStyle(700,16px,140%,$color-2);
+    }
+
+    &__emailIcon{
+        width: 25px;
+        height: 20px;
+        object-fit: contain;
+        object-position: center;
+        margin-right: 22.5px;
+    }
+
+    &__wrap{
+        background-color: $color-4;
+        padding: 80px 0;
+    }
+
+    &__list{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        @include flex;
+        align-items: flex-start;
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title{
+        margin: 0;
+        @include fontStyle(700,19px,140%,$color-2);
+        margin-bottom: 30px;
+    }
+
+    &__link{
+        text-decoration: none;
+        @include fontStyle(400,14px,140%,$color-2);
+        margin-bottom: 10px;
+    }
+
+    &__link:last-child{
+        margin-bottom: 0;
+    }
+
+    &__bottom{
+        background-color: $color-4;
+        padding-bottom: 30px;
+    }
+    
+    &__visma{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        @include fontStyle(700,13px,140%,$color-2);  
+    }
+}
